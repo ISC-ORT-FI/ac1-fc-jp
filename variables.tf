@@ -39,3 +39,8 @@ output "ec2-public-ip" {
 output "lb-ip" {
   value = aws_lb.ac1-lb.dns_name
 }
+
+output "lb-tg" {
+  value = aws_lb_target_group.ac1-tg.arn
+
+}
